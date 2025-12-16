@@ -1,0 +1,16 @@
+<h2>Structural Directives Demo</h2>
+
+<!-- ngIf -->
+<p *ngIf="isLoggedIn">Welcome back!</p>
+<p *ngIf="!isLoggedIn">Please login</p>
+
+<button (click)="toggleLogin()">Toggle Login</button>
+
+<hr>
+
+<!-- ngFor -->
+<ul>
+  <li *ngFor="let item of items; index as i">
+    {{ i }} - {{ item }}
+  </li>
+</ul>

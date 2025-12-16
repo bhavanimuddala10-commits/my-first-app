@@ -1,0 +1,25 @@
+<p>property-binding-demo works!</p>
+
+<!-- Image src -->
+<img [src]="imageUrl" width="120">
+
+<br><br>
+
+<!-- Disabled button -->
+<button [disabled]="isDisabled">Click Me</button>
+
+<br><br>
+
+<!-- Class binding -->
+<p [class.active]="isActive">
+  This text uses class binding
+</p>
+
+<br><br>
+
+<!-- Style binding -->
+<p [style.fontSize.px]="fontSize">
+  Dynamic font size text
+</p>
+
+<!-- <p [class]="isActive"> ❌ -->

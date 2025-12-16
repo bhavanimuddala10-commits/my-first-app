@@ -1,0 +1,25 @@
+<h2>Attribute vs Property Binding</h2>
+
+<!-- Property binding -->
+<button [disabled]="isDisabled">
+  Property Bound Button
+</button>
+
+<br><br>
+
+<!-- Attribute binding -->
+<button [attr.aria-label]="label">
+  Attribute Bound Button
+</button>
+
+<br><br>
+
+<table border="1">
+  <tr>
+    <td [attr.colspan]="colCount">Total</td>
+  </tr>
+</table>
+
+<br>
+
+<button (click)="toggle()">Toggle Disabled</button>

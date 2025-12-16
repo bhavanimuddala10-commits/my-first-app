@@ -1,0 +1,30 @@
+<p>event-binding-demo works!</p>
+
+<!-- Click Event -->
+<p>Button clicked: {{ clickCount }} times</p>
+<button (click)="onClick()">Click Me</button>
+
+<hr>
+
+<!-- Input Event -->
+<p>Input value: {{ inputValue }}</p>
+<input type="text" (input)="onInput($event)" placeholder="Type something">
+
+<hr>
+
+<!-- Mouse Events -->
+<div 
+  (mouseenter)="onHover()" 
+  (mouseleave)="onLeave()" 
+  style="padding: 10px; border: 1px solid #333; width: 200px; text-align: center; margin-bottom: 10px;">
+  {{ hoverMessage }}
+</div>
+
+<hr>
+
+<!-- Key Press Event -->
+<input type="text" (keypress)="onKeyPress($event)" placeholder="Press a key">
+<p>{{ keyPressValue }}</p>
+<button (click)="greet('Bhavani')">Greet</button>
+<!-- <button (click)="count = count + 1">Click</button> //Template can call methods, but should not contain logic. -->
+
