@@ -6,7 +6,8 @@ import { EventBindingDemo } from './event-binding-demo/event-binding-demo';
 import { NullSafeDemo } from './null-safe-demo/null-safe-demo';
 import { TemplateRefDemo } from './template-ref-demo/template-ref-demo';
 import { StructuralDirectivesDemo } from './structural-directives-demo/structural-directives-demo';
-
+import { NgTemplateOutletDemo } from './ng-template-outlet-demo/ng-template-outlet-demo';
+import { ProductListComponent } from './product-list/product-list';
 export const routes: Routes = [
     { path: '', component: Home },
     { path: 'interpolation', component: InterpolationComponent },
@@ -14,5 +15,7 @@ export const routes: Routes = [
     { path: 'EventBinding', component: EventBindingDemo },
     { path: 'NullSafe', component: NullSafeDemo },
     { path: 'TemplateRef', component: TemplateRefDemo },
-    {path:'StructuralDirectives',component:StructuralDirectivesDemo}
+    {path:'StructuralDirectives',component:StructuralDirectivesDemo},
+    {path:'NgTemplateOutlet',component:NgTemplateOutletDemo},
+    {path:'ProductListComponent',component:ProductListComponent}
 ];

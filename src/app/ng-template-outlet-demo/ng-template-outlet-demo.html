@@ -1,0 +1,24 @@
+<h2>ngTemplateOutlet Demo</h2>
+
+<!-- Reusable template -->
+<ng-template #userTemplate let-user let-role="role">
+  <p>
+    Name: {{ user.name }} <br>
+    Role: {{ role }}
+  </p>
+</ng-template>
+
+<hr>
+
+<!-- Render template with context -->
+<ng-container
+  [ngTemplateOutlet]="userTemplate"
+  [ngTemplateOutletContext]="{ $implicit: user1, role: user1.role }">
+</ng-container>
+
+<hr>
+
+<ng-container
+  [ngTemplateOutlet]="userTemplate"
+  [ngTemplateOutletContext]="{ $implicit: user2, role: user2.role }">
+</ng-container>

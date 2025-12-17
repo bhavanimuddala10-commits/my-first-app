@@ -1,4 +1,26 @@
 <h2>Hello {{username}}</h2>
 <p>Button clicked: {{count}} times</p>
 <button (click)="increaseCount()">click me </button>
+<button (click)="loaduser()">Load me </button>
 
+@if (user; as u) {
+  <p>Hello I am {{  u.name | uppercase |lowercase | titlecase}}</p>
+  <p>I am working as  {{ u.role }}</p>
+} @else {
+  <p>Loading...</p>
+}
+
+@for (item of items; track $index) {
+   {{ item }}
+}
+
+<h3>Built-in pipes</h3>
+<p>Today: {{ today | date:'yyyy-MM-dd' }}</p>
+<p>Name: {{ name | uppercase }}</p>
+<p>Chained: {{ ratio | percent:'1.0-2' | uppercase }}</p>
+
+@if(userb; as u){
+    <p>Name: {{ u.name | titlecase }}</p>
+    <p>Salary: {{ u.salary | currency:'INR' }}</p>
+    <p>Joined: {{ u.joined | date:'longDate' }}</p>
+}
