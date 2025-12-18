@@ -9,7 +9,7 @@ import { StructuralDirectivesDemo } from './structural-directives-demo/structura
 import { NgTemplateOutletDemo } from './ng-template-outlet-demo/ng-template-outlet-demo';
 import { ProductListComponent } from './product-list/product-list';
 export const routes: Routes = [
-    { path: '', component: Home },
+    { path: 'home', component: Home },
     { path: 'interpolation', component: InterpolationComponent },
     { path: 'PropertyBinding', component: PropertyBindingDemo },
     { path: 'EventBinding', component: EventBindingDemo },

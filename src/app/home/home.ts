@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy ,OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-home',
@@ -9,7 +9,10 @@ import { CommonModule } from '@angular/common';
 })
 
 
-export class Home {
+export class Home implements OnDestroy,OnInit {
+  ngOnInit() {
+  console.log('Home init');
+}
   username="Bhavani"
   count=0
   increaseCount(){
@@ -32,4 +35,7 @@ export class Home {
   salary: 75000,
   joined: new Date()
 };
+ngOnDestroy(): void {
+    console.log('ngon destroy called')
+  }
 }
