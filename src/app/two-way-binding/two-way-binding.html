@@ -1,0 +1,4 @@
+<p>two-way-binding works!</p>
+Name: <input [(ngModel)]="name" placeholder="Type your name" />
+<p>Hello {{ name || 'friend' }}!</p>
+<button (click)="update()">update</button>
