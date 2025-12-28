@@ -7,7 +7,7 @@ import { ɵEmptyOutletComponent } from "@angular/router";
   styleUrl: './my-lifecycyle-hooks.css',
 })
 export class MyLifecycyleHooks implements OnChanges, OnInit,DoCheck,AfterViewInit,AfterViewChecked, AfterContentInit,AfterContentChecked, OnDestroy{
-  // @Input() data:any
+  @Input() data:any
   @Input() count:any
   constructor(){
     console.log("constructor called")

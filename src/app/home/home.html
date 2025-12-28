@@ -6,7 +6,8 @@
 @if (user; as u) {
   <p>Hello I am {{  u.name | uppercase |lowercase | titlecase}}</p>
   <p>I am working as  {{ u.role }}</p>
-} @else {
+}
+@else {
   <p>Loading...</p>
 }
 

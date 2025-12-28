@@ -9,9 +9,13 @@ import { StructuralDirectivesDemo } from './structural-directives-demo/structura
 import { NgTemplateOutletDemo } from './ng-template-outlet-demo/ng-template-outlet-demo';
 import { ProductListComponent } from './product-list/product-list';
 import { ProductDetail } from './product-list/product-detail';
-
 import { TwoWayBinding } from './two-way-binding/two-way-binding';
 import { DependencyInjectionServices } from './dependency-injection-services/dependency-injection-services';
+import { ClassBindingDemo } from './class-binding-demo/class-binding-demo';
+import { StyleBindingDemo } from './style-binding-demo/style-binding-demo';
+import { MyLifecycyleHooks } from './my-lifecycyle-hooks/my-lifecycyle-hooks';
+import { Sample } from './sample'
+
 export const routes: Routes = [
     { path: 'home', component: Home },
     { path: 'interpolation', component: InterpolationComponent },
@@ -19,12 +23,15 @@ export const routes: Routes = [
     { path: 'EventBinding', component: EventBindingDemo },
     { path: 'NullSafe', component: NullSafeDemo },
     { path: 'TemplateRef', component: TemplateRefDemo },
-    {path:'StructuralDirectives',component:StructuralDirectivesDemo},
-    {path:'NgTemplateOutlet',component:NgTemplateOutletDemo},
-    {path:'ProductListComponent',component:ProductListComponent},
-    {path:"TwoWayBinding",component:TwoWayBinding},
-    {path:"services",component:DependencyInjectionServices},
+    { path:'StructuralDirectives',component:StructuralDirectivesDemo},
+    { path:'NgTemplateOutlet',component:NgTemplateOutletDemo},
+    { path:'ProductListComponent',component:ProductListComponent},
+    { path:"TwoWayBinding",component:TwoWayBinding},
+    { path:"services",component:DependencyInjectionServices},
     { path: 'product/:id', component: ProductDetail },
+    {path:'ClassBindingDemo',component:ClassBindingDemo},
+    {path:'StyleBindingDemo',component:StyleBindingDemo},
 
+    {path:'MyLifecycyleHooks',component:MyLifecycyleHooks},
     { path: '**', redirectTo: 'home' }
 ];

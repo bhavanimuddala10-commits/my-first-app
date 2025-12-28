@@ -1,0 +1,34 @@
+.active{
+    background-color: blueviolet;
+    color: azure;
+}
+
+.not-active{
+    background-color: aqua;
+    color: beige;
+}
+
+
+.class-a{
+    background-color: black;
+    color: beige;
+}
+
+.class-b{
+    background-color: pink;
+    color: beige;
+}
+
+.class1{
+    background-color:saddlebrown ;
+    color: beige;
+}
+
+.class2{
+    background-color:rgb(33, 185, 74) ;
+    color: beige;
+}
+.class3{
+    background-color:rgb(210, 19, 54) ;
+    color: beige;
+}
