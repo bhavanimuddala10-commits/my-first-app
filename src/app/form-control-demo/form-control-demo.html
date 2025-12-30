@@ -1,0 +1,32 @@
+<form >
+    <div ngModelGroup #nggroup="ngModelGroup" >
+    <label>username</label>
+    <input type="text" ngModel name="uname" #un="ngModel" required minlength="5">
+    <br><br>
+    @if (un.touched) {
+    <ng-container>
+        @if (un.errors?.['required']) {
+        <p class="text-danger mt-1">username is required</p>
+        }
+        @if (un.errors?.['minlength']) {
+            <p class="text-danger mt-1">name should be minimun 3 character</p>
+        }
+    </ng-container>
+    }
+   <label>Paasword</label>
+    <input type="password" ngModel name="pwd" #pw="ngModel" required minlength="5">
+    <br><br>
+    @if (pw.touched) {
+    <ng-container>
+        @if (pw.errors?.['required']) {
+        <p class="text-danger mt-1">Password is required</p>
+        }
+        @if (pw.errors?.['minlength']) {
+            <p class="text-danger mt-1">password should be minimun 5 character</p>
+        }
+    </ng-container>
+    }
+    <button (click)="show(un,pw,nggroup)" class="btn btn-primary" type="button">click</button>
+    </div>
+    
+</form>

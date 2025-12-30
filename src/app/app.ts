@@ -2,10 +2,11 @@ import { Component, signal, viewChild } from '@angular/core';
 import { RouterOutlet,RouterModule,RouterLink  } from '@angular/router';
 import { MyLifecycyleHooks } from "./my-lifecycyle-hooks/my-lifecycyle-hooks";
 import { HttpClient } from '@angular/common/http';
+import { FormsModule, NgForm, NgModel } from "@angular/forms";
 @Component({
   selector: 'app-root',
   standalone:true,
-  imports: [RouterOutlet, RouterModule,RouterLink ],
+  imports: [RouterOutlet, RouterModule, RouterLink, FormsModule],
   // imports: [MyLifecycyleHooks],
   templateUrl:'./app.html'
 })
