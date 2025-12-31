@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {User} from "../user"
+import {User} from "../Services/user"
 
 @Component({
   selector: 'app-dependency-injection-services',

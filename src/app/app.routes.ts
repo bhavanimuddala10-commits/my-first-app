@@ -15,6 +15,7 @@ import { ClassBindingDemo } from './class-binding-demo/class-binding-demo';
 import { StyleBindingDemo } from './style-binding-demo/style-binding-demo';
 import { MyLifecycyleHooks } from './my-lifecycyle-hooks/my-lifecycyle-hooks';
 import { FormControlDemo } from './form-control-demo/form-control-demo';
+import { CrudHttpDemo } from './crud-http-demo/crud-http-demo';
 import { Sample } from './sample'
 
 export const routes: Routes = [
@@ -33,6 +34,7 @@ export const routes: Routes = [
     {path:'ClassBindingDemo',component:ClassBindingDemo},
     {path:'StyleBindingDemo',component:StyleBindingDemo},
     {path:'MyLifecycyleHooks',component:MyLifecycyleHooks},
-    {path:'FormControlDemo',component:FormControlDemo},
+    { path: 'FormControlDemo', component: FormControlDemo },
+    {path:'CrudHttpDemo',component:CrudHttpDemo},
     { path: '**', redirectTo: 'home' }
 ];

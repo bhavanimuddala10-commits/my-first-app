@@ -1,0 +1,29 @@
+@if(users){
+    <div class="container user-table">
+        <div class="headers">
+            <h2 class="table-title">manage users</h2>
+            <button class="btn btn-primary">Add user</button>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>userID</th>
+                    <th>ID</th>
+                    <th>title</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                @for(item of users ; track item.id){
+                    <tr>
+                        <td>{{ item.userId}} </td>
+                        <td>{{item.id}}</td>
+                        <td>{{item.title}}</td>
+                    
+                        <td><button class="btn btn-primary">Add</button></td>
+                        <td><button class="btn btn-danger">Delete</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
